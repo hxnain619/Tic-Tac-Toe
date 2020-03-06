@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oxanium' !important;
+}
+.fa {
+	font: normal normal normal 14px/1 FontAwesome !important;
+}
+body {
+	font-size: 18px;
+	padding: .5em 2em;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+#button-play-again {
+	margin: 0 auto;
+}
+
+#container {
+	margin: 2em auto;
+	width: 100%;
+}
+
+#game-board {
+	display: grid;
+	grid-template-columns: repeat(3, 150px);
+	margin: 0 auto;
+	width: 450px
+}
+
+#play-again {
+	margin: 0 auto;
+}
+
+#square-0, #square-1, #square-3, #square-4 {
+	border-width: 0 2px 2px 0;
+}
+
+#square-2, #square-5 {
+	border-width: 0 0 2px 0;
+}
+
+#square-6, #square-7 {
+	border-width: 0 2px 0 0;
+}
+
+#square-8 {
+	border-width: 0;
+}
+
+.game-square {
+	border-color: lightgrey;
+	border-style: solid;
+	display: inline;
+	font-size: 6em;
+	line-height: 120px;
+	padding: 20px 40px;
+	height: 150px;
+	width: 150px;
+}
+
+.player {
+	width: 100px;
+	padding: 10px;
+	height: 100px;
+	margin: 0px -10px;
+}
+#message-container {
+	display: none;
+	position: fixed;
+	padding: 10%;
+	top: 10%;
+	left: 0;
+	right: 0;
+	bottom: 10%;
+	z-index: 2;
+	height: auto;
+	width: 100%;
+	border-radius: 10px;
+	background: white;
+}
+
+#bg {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.274);
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+#success_img {
+	width: 300px;
+	height: auto;
+}
+button {
+	padding: 10px;
+	background: white;
+	color: black;
+	font-size: 22px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 5px lightgray;
+	transition: box-shadow .5s;
+	outline: none;
+	transition: color .5s, background .5s;
+}
+button:hover {
+	color: white;
+	background: black;
+}
+
+
+button:hover {
+	box-shadow: 0px 2px 5px 5px lightgray;
+}
+
+#close {
+	height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+	margin: 20px;
+}
+
+.digit {
+	background: #282829;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 3px;
+}

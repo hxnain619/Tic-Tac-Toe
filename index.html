@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Tic-Tac-Toe</title>
+	<link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+
+<body>
+	<header>
+		<h1>Tic-Tac-Toe</h1>
+		<div id="message-container" >
+		<img id='close' src='./close.png' onclick='close()'/>
+		<img id="success_img" src="https://pngimg.com/uploads/confetti/confetti_PNG86957.png" />
+		<h2 id="message"></h2>
+		</div>
+		<div id="bg" ></div>
+		<div id="turn-tracker">
+			<h4>Current Turn : 
+			<span id="turn" class="digit"></span>
+			</h4>
+		</div>
+	</header>
+	<main>
+		<div id="container">
+			<div id="game-board">
+				<div id="square-0" class="game-square"></div>
+				<div id="square-1" class="game-square"></div>
+				<div id="square-2" class="game-square"></div>
+				<div id="square-3" class="game-square"></div>
+				<div id="square-4" class="game-square"></div>
+				<div id="square-5" class="game-square"></div>
+				<div id="square-6" class="game-square"></div>
+				<div id="square-7" class="game-square"></div>
+				<div id="square-8" class="game-square"></div>
+			</div>
+		</div>
+		<div id="play-again">
+			<button id="button-play-again">Play again!</button>
+			<button id="button-reset" onclick="hardReset()">Reset <i class='fa fa-refresh' ></i></button>
+		</div>
+		<div id="scoreboard">
+			<h2>Scoreboard</h2>
+			<span class="digit" >X </span>
+			&nbsp;:&nbsp;<span id="scoreboard-x" class="digit"></span>
+			<br />
+			<br />
+			<span class="digit" >O </span>
+			&nbsp;:&nbsp;<span id="scoreboard-o" class="digit"></span>
+		</div>
+	</main>
+	<script src="script.js"></script>
+</body>
+
+</html>
